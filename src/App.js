@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <section className="main">
-          <Headline header='Posts' />
+          <Headline header='Posts' desc="Click the button to render post" />
         </section>
       </div>
     );
