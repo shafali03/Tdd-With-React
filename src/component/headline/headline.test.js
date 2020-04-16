@@ -40,8 +40,23 @@ describe('Headline Component', () => {
     it('should render a desc', () => {
       const desc = findByTestAttr(wrapper, 'desc')
       expect(desc.length).toBe(1)
-
     });
+  });
+
+
+
+  describe('Have No props', () => {
+
+    let wrapper;
+    beforeEach(() => {
+      wrapper = setUp();
+    });
+
+    it('Should not render', () => {
+      const component = findByTestAttr(wrapper, "HeadlineComponent");
+      expect(component.length).toBe(0)
+    })
+
 
   });
 });
